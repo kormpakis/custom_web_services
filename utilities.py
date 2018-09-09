@@ -39,3 +39,18 @@ def select_interest_by_tags(tags_id):
     cursor.execute(sql_query)
     results = cursor.fetchall()
     return results
+
+
+def select_interest_by_user_tag(user_id, tags_id):
+    """
+    Return result based on both user and tags
+    :param user_id: user
+    :param tags_id: tag
+    :return: interest
+    """
+    db = MySQLdb.connect("localhost", "root", "", "wp")
+    cursor = db.cursor()
+    sql_query = """SELECT * FROM interest_array WHERE tags_id={} AND user_id={}""".format(tags_id, user_id)
+    cursor.execute(sql_query)
+    results = cursor.fetchall()
+    return results

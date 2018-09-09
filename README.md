@@ -66,4 +66,24 @@ GET /tag/9/interests/
     ]
 }
 ```
+```
+GET /user/1/tag/9/interests/ 
 
+{
+    "items": [
+        {
+            "count_tags": 10,
+            "tags_id": 9,
+            "user_id": 1
+        }
+    ]
+}
+```
+For all requests that don't exist, it returns the following message
+```
+{
+    "items": {
+        "response": "Not found"
+    }
+}
+```
