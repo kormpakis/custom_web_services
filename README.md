@@ -40,4 +40,30 @@ GET /interests/
     ]
 }
 ```
+```
+GET /user/2/interests/
+
+{
+    "items": [
+        {
+            "count_tags": 6,
+            "tags_id": 4,
+            "user_id": 2
+        }
+    ]
+}
+```
+```
+GET /tag/9/interests/ 
+
+{
+    "items": [
+        {
+            "count_tags": 10,
+            "tags_id": 9,
+            "user_id": 1
+        }
+    ]
+}
+```
 

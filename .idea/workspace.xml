@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b519efaf-d4be-463c-99b5-988807a01ccb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/utilities.py" beforeDir="false" afterPath="$PROJECT_DIR$/utilities.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,14 +22,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="md" value="97" />
-          <entry key="py" value="475" />
+          <entry key="md" value="110" />
+          <entry key="py" value="1227" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Markdown" value="97" />
-          <entry key="Python" value="475" />
+          <entry key="Markdown" value="110" />
+          <entry key="Python" value="1227" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -50,8 +50,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="255">
-                <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+              <first_editor relative-caret-position="257">
+                <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
               </first_editor>
               <second_editor />
             </state>
@@ -61,8 +61,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/utilities.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="25" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="25" />
+            <state relative-caret-position="72">
+              <caret line="29" column="27" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="27" />
+              <folding>
+                <marker date="1536486757675" expanded="true" signature="362:785" ph="..." />
+                <marker date="1536486757675" expanded="true" signature="824:829" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -70,11 +74,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+            <state relative-caret-position="412">
+              <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
-                <marker date="1536484911197" expanded="true" signature="165:166" ph="..." />
+                <marker date="1536486757589" expanded="true" signature="215:216" ph="..." />
+                <marker date="1536486757589" expanded="true" signature="955:1298" ph="..." />
               </folding>
             </state>
           </provider>
@@ -159,7 +164,7 @@
     <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Python Console" />
@@ -190,18 +195,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/utilities.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="25" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="25" />
+        <state relative-caret-position="72">
+          <caret line="29" column="27" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="27" />
+          <folding>
+            <marker date="1536486757675" expanded="true" signature="362:785" ph="..." />
+            <marker date="1536486757675" expanded="true" signature="824:829" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        <state relative-caret-position="412">
+          <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
-            <marker date="1536484911197" expanded="true" signature="165:166" ph="..." />
+            <marker date="1536486757589" expanded="true" signature="215:216" ph="..." />
+            <marker date="1536486757589" expanded="true" signature="955:1298" ph="..." />
           </folding>
         </state>
       </provider>
@@ -209,8 +219,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="255">
-            <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+          <first_editor relative-caret-position="257">
+            <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
           </first_editor>
           <second_editor />
         </state>
