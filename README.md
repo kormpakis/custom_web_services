@@ -93,6 +93,31 @@ GET /post/409/info/
     }
 }
 ```
+```
+GET /user/1/tags/info/ 
+
+{
+    "items": [
+        {
+            "count": 27,
+            "tag": 5
+        },
+        {
+            "count": 73,
+            "tag": 4
+        },
+        {
+            "count": 10,
+            "tag": 9
+        },
+        {
+            "count": 23,
+            "tag": 2
+        }
+    ]
+}
+
+```
 For all requests that don't exist, it returns the following message
 ```
 {

@@ -54,3 +54,17 @@ def select_interest_by_user_tag(user_id, tags_id):
     cursor.execute(sql_query)
     results = cursor.fetchall()
     return results
+
+
+def select_tags_by_user(user_id):
+    """
+    Return the tags for a user
+    :param user_id:
+    :return:
+    """
+    db = MySQLdb.connect("localhost", "root", "", "wp")
+    cursor = db.cursor()
+    sql_query = """SELECT tags_id, count_tags FROM interest_array WHERE user_id={}""".format(user_id)
+    cursor.execute(sql_query)
+    results = cursor.fetchall()
+    return results
