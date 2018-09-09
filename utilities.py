@@ -68,3 +68,17 @@ def select_tags_by_user(user_id):
     cursor.execute(sql_query)
     results = cursor.fetchall()
     return results
+
+
+def post_selection_by_user(user_id):
+    """
+    Return articles by priority pes user
+    :param user_id: user_id
+    :return: post_ids
+    """
+    db = MySQLdb.connect("localhost", "root", "", "wp")
+    cursor = db.cursor()
+    sql_query = """SELECT post_id, priority FROM article_selection WHERE user_id={}""".format(user_id)
+    cursor.execute(sql_query)
+    results = cursor.fetchall()
+    return results

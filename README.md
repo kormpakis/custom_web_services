@@ -118,6 +118,19 @@ GET /user/1/tags/info/
 }
 
 ```
+```
+GET /user/1/selected/posts/ 
+
+{
+    "items": [
+        {
+            "post_id": 409,
+            "priority": 1
+        }
+    ]
+}
+
+```
 For all requests that don't exist, it returns the following message
 ```
 {

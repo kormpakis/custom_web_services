@@ -2,7 +2,7 @@ from flask import Flask, jsonify
 
 from request_utilities import get_wordpress_post_info
 from utilities import select_interest_array, select_interest_by_user, select_interest_by_tags, \
-    select_interest_by_user_tag, select_tags_by_user
+    select_interest_by_user_tag, select_tags_by_user, post_selection_by_user
 
 app = Flask(__name__)
 
@@ -87,6 +87,20 @@ def get_tags_per_user(user_id):
     if results:
         for result in results:
             result_json = {"tag": result[0], "count": result[1]}
+            items.append(result_json)
+        return jsonify(items=items)
+    else:
+        return jsonify(items={"response": "Not found"})
+
+
+@app.route('/user/<user_id>/selected/posts/', methods=['GET'])
+def selected_posts_per_user(user_id):
+    """Get selected articles info"""
+    results = post_selection_by_user(user_id)
+    items = []
+    if results:
+        for result in results:
+            result_json = {"post_id": result[0], "priority": result[1]}
             items.append(result_json)
         return jsonify(items=items)
     else:
