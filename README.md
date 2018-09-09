@@ -8,6 +8,9 @@ A project using Flask Framework and connects Android with Wordpress
 ## Install Flask
 + pip install flask
 
+## Install requests
++ pip install requests
+
 ## Run webservices
 + flask run
 
@@ -77,6 +80,17 @@ GET /user/1/tag/9/interests/
             "user_id": 1
         }
     ]
+}
+```
+```
+GET /post/409/info/
+
+{
+    "items": {
+        "image_url": "",
+        "post_url": "http://localhost/wordpress/2018/08/telikos/",
+        "title": "telikos"
+    }
 }
 ```
 For all requests that don't exist, it returns the following message
